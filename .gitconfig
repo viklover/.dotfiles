@@ -1,0 +1,7 @@
+[user]
+	name = Mihail Vorobyev
+	email = 1viklover@gmail.com
+[core]
+	autocrlf = input
+[init]
+	defaultBranch = master
