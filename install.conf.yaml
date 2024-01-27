@@ -1,12 +1,21 @@
 - defaults:
     link:
-        relink: true
-        create: true
+      relink: true
+      create: true
 
 - link:
+    # environment variables
+    ~/.env: .env
 
     # git
     ~/.gitconfig: .gitconfig
 
+    # midnight commander skin
+    ~/.local/share/mc/skins: mc/skins/**
+
 - create:
     - ~/repos
+
+- shell:
+  - echo "source ~/.env" >> .zshrc
+  - echo "source ~/.env" >> .bashrc
