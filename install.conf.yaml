@@ -2,9 +2,7 @@
     link:
       relink: true
       create: true
-
-- shell:
-  - mkdir -p ~/.local/share/mc/skins
+      glob: true
 
 - link:
     # environment variables
@@ -14,13 +12,11 @@
     ~/.gitconfig: .gitconfig
 
     # midnight commander skin
-    ~/.local/share/mc/skins: 
-      create: true
-      path: mc/skins
+    ~/.local/share/mc/skins: mc/skins/** 
 
 - create:
     - ~/repos
 
 - shell:
-  - echo "source ~/.env" >> .zshrc
-  - echo "source ~/.env" >> .bashrc
+  - echo "source ~/.env" >> ~/.zshrc
+  - echo "source ~/.env" >> ~/.bashrc
