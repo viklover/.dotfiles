@@ -18,7 +18,7 @@
     ~/repos:
       mode: 0755
 
-# - shell:
-  # - echo "source ~/.env" >> ~/.zshrc
-  # - echo "source ~/.env" >> ~/.bashrc
-  # - bash ./installers/install_nvm.sh
+- shell:
+  - echo "source ~/.env" >> ~/.zshrc
+  - echo "source ~/.env" >> ~/.bashrc
+  - bash ./installers/install_nvm.sh
