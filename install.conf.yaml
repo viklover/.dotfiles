@@ -20,3 +20,4 @@
 - shell:
   - echo "source ~/.env" >> ~/.zshrc
   - echo "source ~/.env" >> ~/.bashrc
+  - bash ./installers/install_nvm.sh
