@@ -15,7 +15,8 @@
     ~/.local/share/mc/skins: mc/skins/** 
 
 - create:
-    - ~/repos
+  - ~/repos:
+    mode: 755
 
 - shell:
   - echo "source ~/.env" >> ~/.zshrc
