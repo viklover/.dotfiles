@@ -3,6 +3,9 @@
       relink: true
       create: true
 
+- shell:
+  - mkdir -p ~/.local/share/mc/skins
+
 - link:
     # environment variables
     ~/.env: .env
@@ -11,7 +14,9 @@
     ~/.gitconfig: .gitconfig
 
     # midnight commander skin
-    ~/.local/share/mc/skins: mc/skins/**
+    ~/.local/share/mc/skins: 
+      create: true
+      path: mc/skins
 
 - create:
     - ~/repos
